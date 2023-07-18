@@ -7,6 +7,29 @@
 	vertical-align: baseline;
 }
 
+.background--custom {
+  background-color: #FFFFFF;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  overflow: hidden;
+  z-index: -2;
+  top: 0;
+  left: 0;
+}
+canvas#canvas {
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform: rotate(0deg) scale(2) translateY(0%);
+  --gradient-color-1: #004643; 
+  --gradient-color-2: #abd1c6; 
+  --gradient-color-3: #E16162;  
+  --gradient-color-4: #f9bc60;
+  --gradient-speed: 0.000015;
+}
+
 .items {
   display: flex;
   flex-flow: column;
@@ -15,11 +38,17 @@
   flex-grow: 1;
 }
 
+html {
+  min-height: 100%;
+  height: fit-content;
+}
+
 body {
   padding: 2rem 1rem;
-  background-color: #004643;
   display: flex;
   justify-content: center;
+  min-height: 100%;
+  height: fit-content;
 }
 
 .banner {
@@ -67,7 +96,7 @@ body {
 }
 
 .link {
-  background-color: #f9bc60 ;
+  background-color: #ffffff77;
   border-radius: 2.5rem;
   padding: 0.1rem;
   font-family:Georgia, 'Times New Roman', Times, serif;

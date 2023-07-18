@@ -11,7 +11,11 @@
     <title>Thierry Chau | Links</title>
   </head>
   <body>
+    <div class="background--custom">
+      <canvas id="canvas" />
+    </div>
     <div class="items">
+      
     <div class="banner">
       <img src="/Profile-pic.JPEG" class="banner-image" alt="Profile picture">
     </div>
@@ -42,6 +46,10 @@
       </div>
     </div>
     </div>
-    
+    <script src="https://cdn.jsdelivr.net/gh/greentfrapp/pocoloco@minigl/minigl.js"></script>
+    <script>
+    var gradient = new Gradient();
+    gradient.initGradient("#canvas");
+    </script>
   </body>
 </html>
